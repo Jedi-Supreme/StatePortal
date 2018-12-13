@@ -1,0 +1,88 @@
+<resources>
+
+    <array name="water_issues">
+        <item>
+            <i>
+                <em>Select</em>
+            </i>
+        </item>
+        <item>Burst Pipe Connection</item>
+        <item>Illegal Water Connection</item>
+        <item>Other</item>
+    </array>
+
+    <array name="power_issues">
+        <item>
+            <i>
+                <em>Select</em>
+            </i>
+        </item>
+        <item>Illegal Power Connection</item>
+        <item>Faulty Transformer</item>
+        <item>Faulty Electric Pole</item>
+        <item>Ripped or thorn Cable</item>
+        <item>Other</item>
+    </array>
+
+    <array name="road_issues">
+        <item>
+            <i>
+                <em>Select</em>
+            </i>
+        </item>
+        <item>Broken Down Vehicle</item>
+        <item>Accident</item>
+        <item>Road Obstruction</item>
+        <item>Other</item>
+    </array>
+
+    <string-array name="relations">
+        <item><i><em>Select</em></i></item>
+        <item>Mother</item>
+        <item>Father</item>
+        <item>Guardian</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Friend</item>
+        <item>Ext. Family</item>
+    </string-array>
+
+    <string name="app_name">U.S.E.R.S - CV</string>
+    <string name="firstname">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="home_latitude">Latitude</string>
+    <string name="home_longitude">Longitude</string>
+    <string name="home">Home</string>
+    <string name="emergency_contact_number_s">Emergency Contact Number(s)</string>
+    <string name="ghana_code">+233</string>
+    <string name="fire">Fire</string>
+    <string name="health">Health</string>
+    <string name="police">Police</string>
+    <string name="ecg">"Electricity\nCompany"</string>
+    <string name="road_safety">"Road\nSafety"</string>
+    <string name="gwc">"Water\nCompany"</string>
+    <string name="submit">Submit</string>
+    <string name="type_a_message">Type a Message(Optional)</string>
+    <string name="complaints_list">Complaints List</string>
+    <string name="safety_amp_maintenance_report">"Safety &amp; Maintenance"</string>
+    <string name="main_logo">Main logo</string>
+    <string name="registration_instructions">Enter 10-Digits Mobile Number To Begin Registration</string>
+    <string name="send_verification_code">Send Verification Code</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="verify">Verify</string>
+    <string name="resend">Resend</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="map">Map</string>
+    <string name="choose_on_map">Choose on map</string>
+    <string name="set_home_address">Set Home Address</string>
+    <string name="home_Add_desc">Home Addresses will be used for <u>Home Emergencies</u> and in situations where none of the <u>Emergency Contacts</u> can be reached</string>
+    <string name="almost_done">Almost Done!</string>
+    <string name="emergencies">Emergencies</string>
+    <string name="profile_animation">profile animation</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="home_address">Home Address</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="profile">Profile</string>
+</resources>

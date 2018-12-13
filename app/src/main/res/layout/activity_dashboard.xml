@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:id="@+id/dashboard_layout"
+    tools:context=".activities.Dashboard">
+
+    <TextView
+        android:textAllCaps="true"
+        android:id="@+id/tv_emergency_label"
+        style="@style/text_label"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/emergencies"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!--Police Button-->
+    <Button
+        android:onClick="emergency_guide"
+        android:id="@+id/bt_police"
+        style="@style/action_buttons"
+        android:layout_width="@dimen/police_dim"
+        android:layout_height="@dimen/police_dim"
+        android:background="@drawable/police_button_selector"
+        android:text="@string/police"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Fire Button-->
+    <Button
+        android:onClick="emergency_guide"
+        android:id="@+id/bt_fire"
+        style="@style/action_buttons"
+        android:layout_width="@dimen/other_dim"
+        android:layout_height="@dimen/other_dim"
+        android:background="@drawable/fire_button_selector"
+        android:text="@string/fire"
+        android:textColor="#FFA726"
+        app:layout_constraintBottom_toTopOf="@id/bt_police"
+        app:layout_constraintRight_toLeftOf="@id/bt_police" />
+
+    <!--Health Button-->
+    <Button
+        android:onClick="emergency_guide"
+        android:id="@+id/bt_health"
+        style="@style/action_buttons"
+        android:layout_width="@dimen/other_dim"
+        android:layout_height="@dimen/other_dim"
+        android:background="@drawable/health_back_selector"
+        android:text="@string/health"
+        android:textColor="@color/stc_green"
+        app:layout_constraintBottom_toTopOf="@id/bt_police"
+        app:layout_constraintLeft_toRightOf="@id/bt_police" />
+
+    <TextView
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:id="@+id/tv_action_label"
+        style="@style/text_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:text="@string/safety_amp_maintenance_report"
+        app:layout_constraintBottom_toTopOf="@id/probar_dashboard"
+        />
+
+    <ProgressBar
+        android:id="@+id/probar_dashboard"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_tiny"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/bt_power" />
+
+    <!--Water Button-->
+    <Button
+        android:id="@+id/bt_water"
+        style="@style/report_butons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:onClick="complaint_report"
+        android:text="@string/gwc"
+        app:layout_constraintBottom_toBottomOf="@id/bt_power"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <!--Power Button-->
+    <Button
+        android:layout_marginBottom="@dimen/margin_med"
+        android:id="@+id/bt_power"
+        style="@style/report_butons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="complaint_report"
+        android:text="@string/ecg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!--Road Button-->
+    <Button
+        android:id="@+id/bt_road"
+        style="@style/report_butons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:onClick="complaint_report"
+        android:padding="@dimen/margin_tiny"
+        android:text="@string/road_safety"
+        app:layout_constraintBottom_toBottomOf="@id/bt_power"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/margin_tiny"
+    app:cardUseCompatPadding="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/window_gradient"
+        android:padding="@dimen/margin_tiny">
+
+        <!--address-->
+        <TextView
+            android:id="@+id/tv_list_comp_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:padding="@dimen/margin_tiny"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lowest_txt_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_list_comp_date"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--date-->
+        <TextView
+            android:id="@+id/tv_list_comp_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/row_date_back"
+            android:textAlignment="center"
+            android:textColor="@color/report_text"
+            android:padding="@dimen/margin_tiny"
+            android:textSize="@dimen/lowest_txt_size"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <!--body-->
+        <TextView
+            android:id="@+id/tv_list_body"
+            android:layout_width="0dp"
+            android:maxLines="3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:layout_marginEnd="@dimen/margin_tiny"
+            android:padding="@dimen/margin_tiny"
+            android:textColor="#FFF176"
+            android:textSize="@dimen/lowest_txt_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/bt_list_delete"
+            app:layout_constraintTop_toBottomOf="@id/tv_list_comp_address" />
+
+        <!--Delete button-->
+        <Button
+            android:id="@+id/bt_list_delete"
+            style="@style/small_button"
+            app:layout_constraintTop_toTopOf="@id/tv_list_body"
+            android:layout_marginStart="@dimen/margin_small"
+            android:background="@drawable/delete_layer"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
