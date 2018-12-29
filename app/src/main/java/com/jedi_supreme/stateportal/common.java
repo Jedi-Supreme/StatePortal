@@ -29,6 +29,8 @@ public class common {
     public static final String REGISTRATION_STEP_KEY = "reg_step";
 
     public static final String USERS_PROFILE_REF = "User_Profiles";
+    public static final String USER_RECORDS_REF = "Records";
+
 
     public static final int STEP_REQUEST_OTP = 10;
     public static final int STEP_FILL_DATA = 12;

@@ -93,6 +93,50 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162178316452:android:402dba23a3419974",
+        "android_client_info": {
+          "package_name": "com.jedi_supreme.users_portal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162178316452-2blnbq4p1jikvg0095ip7ha3r29cacj2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jedi_supreme.users_portal",
+            "certificate_hash": "eaa5688a904a7c363ec2bf03ca0d541cc1e3eb63"
+          }
+        },
+        {
+          "client_id": "162178316452-d0jqc3kbis948ptbq68ijnqjt3c286c1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvVsst7HFxOQRbdkFHwSRczHJ82fYLj4c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162178316452-d0jqc3kbis948ptbq68ijnqjt3c286c1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"

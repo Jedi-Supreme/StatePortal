@@ -143,6 +143,8 @@ public class Mobile_Verification extends AppCompatActivity {
                 TimeUnit.SECONDS,
                 weak_verify_context.get(),
                 verificationCallbacks);
+        linear_mobile_layout.setVisibility(View.GONE);
+        constraint_code_layout.setVisibility(View.VISIBLE);
     }
 
     //the callback to detect the verification status
@@ -228,7 +230,7 @@ public class Mobile_Verification extends AppCompatActivity {
                 handler.sendEmptyMessage(arr_index);
                 arr_index++;
             }
-        },0,500);
+        },1000,1000);
 
         //creating the credential
         PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verification_id, code);
@@ -249,8 +251,7 @@ public class Mobile_Verification extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             //verification successful ,move on to the second step
                             if (mAuth.getCurrentUser() != null){
-                                String usernumber = mAuth.getCurrentUser().getPhoneNumber();
-                                second_Step(usernumber);
+                                second_Step();
                             }
 
                         } else {
@@ -294,12 +295,11 @@ public class Mobile_Verification extends AppCompatActivity {
     //===========================================METHODS============================================
 
     //-------------------------------------------INTENTS--------------------------------------------
-    void second_Step(String mobilenumber){
+    void second_Step(){
         SharedPreferences state_pref = getSharedPreferences(common.PREFERENCE_KEY,MODE_PRIVATE);
         SharedPreferences.Editor pref_editor = state_pref.edit();
         pref_editor.putInt(common.REGISTRATION_STEP_KEY,common.STEP_FILL_DATA).apply();
         Intent userDetails_intent = new Intent(weak_verify_context.get(),UserDetails.class);
-        userDetails_intent.putExtra(common.MOBILE_NUMBER_KEY,mobilenumber);
         startActivity(userDetails_intent);
         super.finish();
     }
